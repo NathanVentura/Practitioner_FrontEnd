@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Viagem dos sonhos</title>
 </head>
 
@@ -11,16 +12,16 @@
   <header>
     <nav>
       <ul>
-        <li>Pacotes</li>
-        <li>Taxas</li>
-        <li>Contato</li>
+        <li><a href="#">Pacotes</a></li>
+        <li><a href="#">Taxa</a></li>
+        <li><a href="#">Contato</a></li>
       </ul>
     </nav>
     <h1>Venha realizar a viagem dos seus sonhos!</h1>
   </header>
 
-  <section>
-    <h2>Subtítulo</h2>
+  <section id="pacotes">
+    <h2>Conheça nossos Pacotes</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum diam vel vestibulum dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin finibus semper tortor, eu fringilla felis bibendum eget. Vivamus porta fringilla leo consectetur dignissim. In lobortis posuere justo, sit amet pulvinar neque egestas in. Etiam ultricies, massa a porta porttitor, purus neque aliquam tortor, fringilla suscipit ex nibh sit amet nunc. Curabitur sagittis, mauris ac tincidunt ornare, sapien neque viverra sem, in ornare eros enim eget turpis. Curabitur nibh massa, scelerisque ut convallis vitae, blandit nec orci.
       <br><br>
@@ -28,26 +29,60 @@
       <hr>
 
     </p>
-    <figure>
-      <img src="/img/nossos-pacotes/gramado.jpeg" alt="Imagem de chalé em Gramado">
-      <figcaption>Gramado</figcaption>
-    </figure>
-    <figure>
-      <img src="/img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
-      <figcaption>Porto Seguro</figcaption>
-    </figure>
-    <figure>
-      <img src="/img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
-      <figcaption>Rio de Janeiro</figcaption>
-    </figure>
+    <div class="figuras">
+      <figure>
+        <img src="/img/nossos-pacotes/gramado.jpeg" alt="Imagem de chalé em Gramado">
+        <figcaption>Gramado</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
+        <figcaption>Porto Seguro</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
+        <figcaption>Rio de Janeiro</figcaption>
+      </figure>
+    </div>
+    <div class="videos">
+      <video controls width="500px">
+        <source src="/video/rabbit320.mp4" type="video/mp4">
+        <source src="/video/rabbit320.webm" type="video/webm">
+        Seu navegador não suporta o formato do video. <a href="">Clique aqui para baixar</a>
+      </video>
+    </div>
   </section>
-  <video controls width="500px">
-    <source src="/video/rabbit320.mp4" type="video/mp4">
-    <source src="/video/rabbit320.webm" type="video/webm">
-    Seu navegador não suporta o formato do video. <a href="">Clique aqui para baixar</a>
-  </video>
   <section>
-    <h2>Contato</h2>
+    <h2>Taxas e Serviços</h2>
+    <table>
+      <caption>Descrição dos serviços e respectivos valores</caption>
+      <thead>
+        <tr>
+          <th>
+            Serviços
+          </th>
+          <th>
+            Valor
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reserva de Hotel</td>
+          <td>R$150,00</td>
+        </tr>
+        <tr>
+          <td>Compra de Passagens</td>
+          <td>R$100,00</td>
+        </tr>
+        <tr>
+          <td>Aluguel de Carros</td>
+          <td>R$50,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Orçamento</h2>
     <form method="GET" action="">
       <fieldset>
         <legend>Dados da viagem</legend>
@@ -103,37 +138,7 @@
       <button>Salvar</button>
     </form>
   </section>
-  <!-- <section>
-    <h2>Taxas e Serviços</h2>
-    <p>Veja nossas taxas para serviços</p>
-    <table border>
-      <caption>Descrição dos serviços e respectivos valores</caption>
-      <thead>
-        <tr>
-          <th>
-            Serviços
-          </th>
-          <th>
-            Valor
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Reserva de Hotel</td>
-          <td>R$150,00</td>
-        </tr>
-        <tr>
-          <td>Compra de Passagens</td>
-          <td>R$100,00</td>
-        </tr>
-        <tr>
-          <td>Aluguel de Carros</td>
-          <td>R$50,00</td>
-        </tr>
-      </tbody>
-    </table>
-  </section> -->
+
   <footer>
     <p>Desenvolvido por Nathan Ventura</p>
   </footer>
