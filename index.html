@@ -8,54 +8,131 @@
   <link rel="stylesheet" href="/css/style.css">
   <title>Viagem dos sonhos</title>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Pacotes</a></li>
-        <li><a href="#">Taxa</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-    <h1>Venha realizar a viagem dos seus sonhos!</h1>
-  </header>
 
-  <section id="pacotes">
+<body>
+  <header class="container-fluid p-2 bg-warning text-center">
+    <nav class="navbar navbar-expand-lg bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Viagem dos sonhos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Taxas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contato
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/carousel/angra.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Entre mares e montanhas</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/carousel/cataratas-iguacu.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>De norte a sul</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/carousel/nordeste.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Venha conhecer o Brasil</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <section class="container-fluid bg-light text-center p-3">
     <h2>Conheça nossos Pacotes</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum diam vel vestibulum dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin finibus semper tortor, eu fringilla felis bibendum eget. Vivamus porta fringilla leo consectetur dignissim. In lobortis posuere justo, sit amet pulvinar neque egestas in. Etiam ultricies, massa a porta porttitor, purus neque aliquam tortor, fringilla suscipit ex nibh sit amet nunc. Curabitur sagittis, mauris ac tincidunt ornare, sapien neque viverra sem, in ornare eros enim eget turpis. Curabitur nibh massa, scelerisque ut convallis vitae, blandit nec orci.
-      <br><br>
-      <a href="https://www.lipsum.com/feed/html">Lorem ipsum Generator</a>
-      <hr>
-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
-    <div class="figuras">
-      <figure>
-        <img src="/img/nossos-pacotes/gramado.jpeg" alt="Imagem de chalé em Gramado">
-        <figcaption>Gramado</figcaption>
-      </figure>
-      <figure>
-        <img src="/img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
-        <figcaption>Porto Seguro</figcaption>
-      </figure>
-      <figure>
-        <img src="/img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
-        <figcaption>Rio de Janeiro</figcaption>
-      </figure>
-    </div>
-    <div class="videos">
-      <video controls width="500px">
-        <source src="/video/rabbit320.mp4" type="video/mp4">
-        <source src="/video/rabbit320.webm" type="video/webm">
-        Seu navegador não suporta o formato do video. <a href="">Clique aqui para baixar</a>
-      </video>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/nossos-pacotes/gramado.jpeg" class="card-img-top" alt="...">
+          <div class="card-body bg-warning">
+            <h5 class="card-title">Gramado</h5>
+            <h1 class="card-subtitle text-muted">R$5.000,00</h1>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+          <div class="card-footer">
+            <small class="text-body-secondary">Em até 24x</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/nossos-pacotes/porto-seguro.jpeg" class="card-img-top" alt="...">
+          <div class="card-body bg-warning">
+            <h5 class="card-title">Porto Seguro</h5>
+            <h1 class="card-subtitle text-muted">R$4.000,00</h1>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+          <div class="card-footer">
+            <small class="text-body-secondary">Em até 24x</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="/img/nossos-pacotes/rio-de-janeiro.jpeg" class="card-img-top" alt="...">
+          <div class="card-body bg-warning">
+            <h5 class="card-title">Rio de Janeiro</h5>
+            <h1 class="card-subtitle text-muted">R$2.000,00</h1>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</a>
+          <div class="card-footer">
+            <small class="text-body-secondary">Em até 24x</small>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section>
+  <section class="container-fluid bg-warning text-xl-center p-3">
     <h2>Taxas e Serviços</h2>
-    <table>
+    <table class="table table-warning table-striped table-hover table-bordered border-warning">
       <caption>Descrição dos serviços e respectivos valores</caption>
-      <thead>
+      <thead class="table-secondary">
         <tr>
           <th>
             Serviços
@@ -65,7 +142,7 @@
           </th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="table-group-divider">
         <tr>
           <td>Reserva de Hotel</td>
           <td>R$150,00</td>
@@ -81,67 +158,86 @@
       </tbody>
     </table>
   </section>
-  <section>
-    <h2>Orçamento</h2>
+  <br>
+  <section class="container-fluid bg-light p-3">
+    <h2 class="text-center">Faça já seu orçamento!</h2>
     <form method="GET" action="">
       <fieldset>
-        <legend>Dados da viagem</legend>
-        <label>Nome</label><br>
-        <input type="text" name="nome"><br><br>
-
-        <label>Email</label><br>
-        <input type="email" required name="Email"><br><br>
-
-        <label>Data da ida</label><br>
-        <input type="date" name="dataIda"><br><br>
-
-        <label>Data da Volta</label><br>
-        <input type="date" name="dataVolta"><br><br>
-
-        <label>Quantidade de pessoas</label><br>
-        <input type="number" name="qtdPessoas"><br><br>
+        <legend>Dados pessoais</legend>
+        <div class="nb-3">
+          <label class="form-label" for="nome">
+            Nome:
+          </label>
+          <input class="form-control" type="text" name="nome" id="nome">
+        </div>
+        <div>
+          <label class="form-label" for="email">
+            Email
+          </label>
+          <input class="form-control" type="email" name="email" id="email" placeholder="seuemail@dominio.com">
+        </div>
+        <div>
+          <label class="form-label" for="dataIda">
+            Data da ida
+          </label>
+          <input class="form-control" type="date" name="dataIda" id="dataIda">
+        </div>
+        <div>
+          <label class="form-label" for="dataVolta">
+            Data da Volta
+          </label>
+          <input class="form-control" type="date" name="dataVolta" id="dataVolta">
+        </div>
       </fieldset>
+      <br>
       <fieldset>
         <legend>Quais serviços deseja contrar?</legend>
-        <label>
-          <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
-        </label>
-        <label>
-          <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
-        </label>
-        <label>
-          <br><input type="checkbox" name="veiculos" value="Veiculo">Reserva de veículos
-        </label>
+        <div class="form-check">
+          <label>
+            Compra de passagens
+          </label>
+          <input class="form-check-input" type="checkbox" name="passagens" value="Passagens" id="compraPassagens">
+        </div>
+        <div class="form-check">
+          <label>
+            Reserva de hospedagem
+          </label>
+          <input class="form-check-input" type="checkbox" name="hospedagem" value="Hospedagem" id="reservaHospedagem">
+        </div>
+        <div class="form-check">
+          <label>
+            Aluguel de veículos
+          </label>
+          <input class="form-check-input" type="checkbox" name="aluguelVeiculos" value="Aluguel de veículos" id="aluguelVeiculos">
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Escolha a forma de pagamento</legend>
-        <label>
-          <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
-        </label>
-        <label>
-          <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
-        </label>
-        <label>
-          <br><input type="radio" name="formaPagamento" value="Pix">Pix
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Escolha o prazo para pagamento</legend>
-        <select name="prazoPagamento">
-          <option value="aVista">A vista</option>
-          <option value="5x">5x sem juros</option>
-          <option value="10x" selected>10x com juros</option>
-        </select>
-      </fieldset>
-      <label>Comentário</label><br>
-      <textarea rows="5" name="comentario"></textarea><br><br>
-      <button>Salvar</button>
+      <br>
+      <button class="btn btn-secondary">Salvar</button>
     </form>
   </section>
-  <footer>
+  <footer class="container-fluid bg-warning p-3 text-center">
     <p>Desenvolvido por Nathan Ventura</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sua Compra</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Produto adicionado ao carrinho!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar comprando</button>
+        <button type="button" class="btn btn-success">Finalizar compra</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>
